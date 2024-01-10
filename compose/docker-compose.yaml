@@ -1,0 +1,35 @@
+version: '3'
+services:
+  zsync-service1:
+    image: ${service}
+    hostname: ${domain}.${build1}
+    container_name: ${domain}.${build1}
+    ports:
+      - ${port1}:${port1}
+    environment:
+      - OTHERS=${INTEROTHER}
+      - HOSTPORT=${domain}.${build1}:${port1}
+    tty: true
+  zsync-service2:
+    image: ${service}
+    hostname: ${domain}.${build2}
+    container_name: ${domain}.${build2}
+    ports:
+      - ${port2}:${port2}
+    environment:
+      - OTHERS=${INTEROTHER}
+      - HOSTPORT=${domain}.${build2}:${port2}
+    tty: true
+  zsync-service3:
+    image: ${service}
+    hostname: ${domain}.${build3}
+    container_name: ${domain}.${build3}
+    ports:
+      - ${port3}:${port3}
+    environment:
+      - OTHERS=${INTEROTHER}
+      - HOSTPORT=${domain}.${build3}:${port3}
+    tty: true
+networks:
+  backend:
+    driver: bridge
