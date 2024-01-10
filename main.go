@@ -66,6 +66,7 @@ func main() {
 		ctx.JSON(http.StatusOK, gin.H{id: "deleted"})
 	})
 
+	// goruping up for sync purpose
 	back := r.Group("/sync")
 
 	back.GET("/set", func(ctx *gin.Context) {
