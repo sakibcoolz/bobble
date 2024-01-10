@@ -17,10 +17,7 @@ run2:
 run3:
 	HOSTPORT=$(HOSTPORT3) \
 	OTHERS=$(OTHERS) \
-	$(GORUN) main.go 
-
-kick-start: docker-image
-	docker-start
+	$(GORUN) main.go
 
 
 docker-start:
@@ -28,5 +25,8 @@ docker-start:
 
 docker-stop:
 	make -C compose stop
+
+kick-start: docker-image docker-start
+	
 
 PHONY: start stop
