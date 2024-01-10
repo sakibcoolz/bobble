@@ -11,12 +11,12 @@ curl --location --request GET 'http://localhost:9001/set' \
 
 get data using API
 ```
-curl --location 'http://localhost:9002/get/adata'
+curl --location 'http://localhost:9002/get/data'
 ```
 
 delete data using API
 ```
-curl --location 'http://localhost:9003/delete/key'
+curl --location 'http://localhost:9003/delete/data'
 ```
 
 
