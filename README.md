@@ -19,6 +19,10 @@ delete data using API
 curl --location 'http://localhost:9003/delete/data'
 ```
 
+create docker image
+```
+make docker-image
+```
 
 to start container 
 ```
@@ -29,3 +33,9 @@ to stop container
 ```
 make docker-stop
 ```
+
+kick start means create image and run as container
+```
+make kick-start
+```
+

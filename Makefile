@@ -19,6 +19,10 @@ run3:
 	OTHERS=$(OTHERS) \
 	$(GORUN) main.go 
 
+kick-start: docker-image
+	docker-start
+
+
 docker-start:
 	make -C compose start
 
