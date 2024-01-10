@@ -5,5 +5,5 @@ make docker-start
 
 to stop container 
 ```
-make docker-start
+make docker-stop
 ```
