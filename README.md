@@ -31,13 +31,13 @@ make docker-start
 
 to stop container 
 ```
-git clone https://github.com/sakibcoolz/bobble.git
-cd bobble
 make docker-stop
 ```
 
 kick start means create image and run as container
 ```
+git clone https://github.com/sakibcoolz/bobble.git
+cd bobble
 make kick-start
 ```
 
